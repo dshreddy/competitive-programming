@@ -26,6 +26,14 @@ This repository contains solutions to various competitive programming problems. 
 
 ---
 
+## Trees
+
+| Problem | Sub Topic | Solution |
+|--------|-----------|----------|
+| [C. Divine Tree](https://codeforces.com/contest/2120/problem/C) |  | [Link](./cf2120/c.cpp) |
+
+---
+
 ## Graph
 
 | Problem | Sub Topic | Solution |
@@ -40,6 +48,15 @@ This repository contains solutions to various competitive programming problems. 
 | Problem | Sub Topic | Solution |
 |--------|-----------|----------|
 | [G - Count Cycles](https://atcoder.jp/contests/abc411/tasks/abc411_g) | Bit Mask DP | [Link](./abc411/g.cpp) |
+
+---
+
+## Geometry
+
+| Problem | Sub Topic | Solution |
+|--------|-----------|----------|
+| [A. Square of Rectangles](https://codeforces.com/contest/2120/problem/A) | Simulation | [Link](./cf2120/a.cpp) |
+| [B. Square Pool](https://codeforces.com/contest/2120/problem/B) | Physics | [Link](./cf2120/b.cpp) |
 
 ---
 
