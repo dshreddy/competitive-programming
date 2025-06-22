@@ -12,7 +12,7 @@ This repository contains solutions to various competitive programming problems. 
 | [B - Distance Table](https://atcoder.jp/contests/abc411/tasks/abc411_b) | Implementation | [Link](./abc411/b.cpp) |
 | [C - Black Intervals](https://atcoder.jp/contests/abc411/tasks/abc411_c) | Simulation | [Link](./abc411/c.cpp) |
 | [A. Letter Home](https://codeforces.com/contest/2121/problem/A) | Math | [Link](./cf2121/a.cpp) |
-| [D. 1709](https://codeforces.com/contest/2121/problem/D) | Logical Thinking | [Link](./cf2121/d.cpp) |
+| [D. 1709](https://codeforces.com/contest/2121/problem/D) | Logical Thinking | [Link](./cf2121/d.cpp) ⭐️ |
 
 ---
 
@@ -21,8 +21,8 @@ This repository contains solutions to various competitive programming problems. 
 | Problem | Sub Topic | Solution |
 |--------|-----------|----------|
 | [B. Above the Clouds](https://codeforces.com/contest/2121/problem/B) | Strings | [Link](./cf2121/b.cpp) |
-| [C. Those Who Are With Us](https://codeforces.com/contest/2121/problem/C) | Implementation | [Link](./cf2121/c.cpp) |
-| [E. Sponsor of Your Problems](https://codeforces.com/contest/2121/problem/E) | Simulation | [Link](./cf2121/e.cpp) |
+| [C. Those Who Are With Us](https://codeforces.com/contest/2121/problem/C) | Implementation | [Link](./cf2121/c.cpp) ⭐️ |
+| [E. Sponsor of Your Problems](https://codeforces.com/contest/2121/problem/E) | Simulation | [Link](./cf2121/e.cpp) ⭐️ |
 
 ---
 
@@ -30,7 +30,7 @@ This repository contains solutions to various competitive programming problems. 
 
 | Problem | Sub Topic | Solution |
 |--------|-----------|----------|
-| [C. Divine Tree](https://codeforces.com/contest/2120/problem/C) |  | [Link](./cf2120/c.cpp) |
+| [C. Divine Tree](https://codeforces.com/contest/2120/problem/C) |  | [Link](./cf2120/c.cpp) ⭐️ |
 
 ---
 
@@ -38,8 +38,8 @@ This repository contains solutions to various competitive programming problems. 
 
 | Problem | Sub Topic | Solution |
 |--------|-----------|----------|
-| [F - Contraction](https://atcoder.jp/contests/abc411/tasks/abc411_f) | DSU | [Link](./abc411/f.cpp) |
-| [G - Count Cycles](https://atcoder.jp/contests/abc411/tasks/abc411_g) | Count Cycles | [Link](./abc411/g.cpp) |
+| [F - Contraction](https://atcoder.jp/contests/abc411/tasks/abc411_f) | DSU | [Link](./abc411/f.cpp) ⭐️ |
+| [G - Count Cycles](https://atcoder.jp/contests/abc411/tasks/abc411_g) | Count Cycles | [Link](./abc411/g.cpp) ⭐️ |
 
 ---
 
@@ -64,4 +64,4 @@ This repository contains solutions to various competitive programming problems. 
 
 | Problem | Sub Topic | Solution |
 |--------|-----------|----------|
-| [D - Conflict 2](https://atcoder.jp/contests/abc411/tasks/abc411_d) | Logic | [Link](./abc411/d.cpp) |
+| [D - Conflict 2](https://atcoder.jp/contests/abc411/tasks/abc411_d) | Logic | [Link](./abc411/d.cpp) ⭐️⭐️ |
