@@ -17,11 +17,9 @@ using namespace std;
 class Solution {
 public:
 
-    bool is_valid(vector<int> &triplet) {
-        int sum = 0;
-        for(auto n: triplet) sum += n;
-        for(auto n: triplet) if(sum - n <= n) return false; // (x+y+z) - z < z
-        return true;
+    bool is_valid(int a, int b, int c) {
+        if((a+b>c) && (a+c>b) && (b+c>a)) return true;
+        else return false;
     }
 
     void solve() {
@@ -48,8 +46,7 @@ public:
             1. First get all triplets with sum > max
             2. Then check if triplet is a valid triangle or not 
         */
-        int target, l, r, sum;
-        vector<vector<int>> triplets;
+        int target, l, r, sum, ans = 0;
         for(int i = 0; i<n; i++) {
             l = i+1, r = n-1;
             while(l<r) {
@@ -57,14 +54,11 @@ public:
                 if(sum > max) {
                     // since all a[l+1], a[l+2], ... a[r-1] are all > a[l]
                     // they also satisfy sum > max
-                    for(int j = l; j<r; j++) triplets.pb({a[i],a[j],a[r]});
+                    for(int j = l; j<r; j++) if(is_valid(a[i],a[j],a[r])) ans++;
                     r--;
                 } else l++;
             }
         }
-        
-        int ans = 0;
-        for(auto triplet: triplets) if(is_valid(triplet)) ans++;
         cout<<ans<<endl;
     }
 };

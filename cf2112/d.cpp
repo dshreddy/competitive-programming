@@ -62,7 +62,7 @@ public:
 
                     for(int v: adj[u]) {
                         if(!visited[v]) {
-                            if(level == 2 && degree[v] == 1 && !flipped) {
+                            if(level == 2 && !flipped) {
                                 if(direction[u] == 1) {
                                     // if d[u] is 1 then (u,v) should be down i.e u->v
                                     // but we're flipping in this case, so v->u
@@ -73,6 +73,7 @@ public:
                                     cout<<u<<"\t"<<v<<endl;
                                     direction[v] = -1;
                                 }
+                                flipped = true;
                             }
                             else if(direction[u] == 1) {
                                 cout<<u<<"\t"<<v<<endl;
