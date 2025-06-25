@@ -16,12 +16,6 @@ using namespace std;
 
 class Solution {
 public:
-
-    bool is_valid(int a, int b, int c) {
-        if((a+b>c) && (a+c>b) && (b+c>a)) return true;
-        else return false;
-    }
-
     void solve() {
         int n, max = INT_MIN;
         cin>>n;
@@ -31,9 +25,6 @@ public:
             cin>>a[i];
             max = std::max(max, a[i]);
         } 
-
-        sort(all(a));
-
         // For Alice to win
         // He needs to select triplet (x,y,z) such that 
         // 1. Sum of any 2 elements in triplet must be strictly greater than 3rd 
@@ -46,17 +37,13 @@ public:
             1. First get all triplets with sum > max
             2. Then check if triplet is a valid triangle or not 
         */
-        int target, l, r, sum, ans = 0;
-        for(int i = 0; i<n; i++) {
-            l = i+1, r = n-1;
-            while(l<r) {
-                sum = a[i]+a[l]+a[r];
-                if(sum > max) {
-                    // since all a[l+1], a[l+2], ... a[r-1] are all > a[l]
-                    // they also satisfy sum > max
-                    for(int j = l; j<r; j++) if(is_valid(a[i],a[j],a[r])) ans++;
-                    r--;
-                } else l++;
+       sort(all(a));
+       int min_x, ans = 0, min_x_index;
+        for(int y = 0; y < n; y++) {
+            for (int z = y+1; z < n; z++) {
+                min_x = fmax(a[n-1], 2*a[z]) - a[y] - a[z];
+                min_x_index = upper_bound(a.begin(), a.begin()+y, min_x) - a.begin(); // upper_bound returns the it to 1st element greater than min_x in the array
+                ans += y - min_x_index;
             }
         }
         cout<<ans<<endl;
